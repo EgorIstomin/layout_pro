@@ -1,8 +1,34 @@
-html(lang="en")
-  head
-    title= pageTitle
-    script(type='text/javascript')
-    link(rel='stylesheet', href='css/page1.css')
-    link(rel='stylesheet', href='css/font-awesome/css/font-awesome.min.css')
-  body
-  include header.pug
+include header.pug
+    aside('content__sidebar')
+      nav(class='nav')
+        ul(class="nav__list")
+          li(class="nav__item is-active")
+            a(class='nav__link' href='page1.html')
+              i(class='nav__icon fa fa-user-secret') 
+              |   Обо мне 
+          li(class="nav__item")
+            a(class='nav__link' href="page2.html")
+              i(class="nav__icon fa fa-rocket") 
+              |   Карьерный путь 
+          li(class="nav__item")
+            a(class='nav__link' href="page3.html")
+              i(class="nav__icon fa fa-briefcase") 
+              |   Портфолио 
+    main(class='content__main')
+      .about
+        .about__left
+          .about__pic
+            img(class='about__img' src="prog.jpg" alt='Круглое фото')
+        .about__right
+          h2(class="page-title") Обо мне 
+          div(class="about__text text")
+            p Меня зовут Егор. Живу в Челябинске. Веб-разработкой заинтересовался недавно. С тех пор занимаюсь разработкой сайтов.
+            p Около двух лет работал разработчиком сайтов, делал всё подряд. Но технологии развиваются и не стоят на месте, поэтому выбрал то, чем хочу заниматься и что приносит наибольшее удовольствие - это фронтенд. Решил развиваться в этом направлении.
+            p Главное для меня - это всегда двигаться вперед, становиться лучше, чем ты был вчера.
+          .about__download
+            a(href='#' class="download-btn")
+              i(class='donwload-btn__icon fa fa-download')
+              |       Скачать резюме 
+include footer.pug 
+          
+        

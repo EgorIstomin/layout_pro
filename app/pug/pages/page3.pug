@@ -1,0 +1,79 @@
+include header.pug
+    aside('content__sidebar')
+      nav(class='nav')
+        ul(class="nav__list")
+          li(class="nav__item")
+            a(class='nav__link' href='page1.html')
+              i(class='nav__icon fa fa-user-secret') 
+              |   Обо мне 
+          li(class="nav__item")
+            a(class='nav__link' href="page2.html")
+              i(class="nav__icon fa fa-rocket") 
+              |   Карьерный путь 
+          li(class="nav__item is-active")
+            a(class='nav__link' href="page3.html")
+              i(class="nav__icon fa fa-briefcase") 
+              |   Портфолио 
+    main(class='content__main')
+      h2(class='page__title') Портфолио 
+      ul(class='portfolio')
+        li(class='portfolio__item')
+          a(class='portfolio__link' href='#')
+            .portfolio__pic
+              img(class='portfolio__img' src="img1.png") 
+            .portfolio__info
+              h3(class='portfolio__title') Deals App 
+              div(class="portfolio__desc") Продажа одежды 
+              div(class="portfolio__type")
+                i(class="portfolio__icon fa fa-mobile-phone")
+                | Приложение 
+          
+        li(class='portfolio__item')
+          a(class='portfolio__link' href='#')
+            .portfolio__pic
+              img(class='portfolio__img' src="img2.png") 
+            .portfolio__info
+              h3(class='portfolio__title') Deals App 
+              div(class="portfolio__desc") Продажа одежды 
+              div(class="portfolio__type")
+                i(class="portfolio__icon fa fa-desktop")
+                | Приложение 
+                
+        li(class='portfolio__item')
+          a(class='portfolio__link' href='#')
+            .portfolio__pic
+              img(class='portfolio__img' src="img3.png") 
+            .portfolio__info
+              h3(class='portfolio__title') Deals App 
+              div(class="portfolio__desc") Продажа одежды 
+              div(class="portfolio__type")
+                i(class="portfolio__icon fa fa-mobile-phone")
+                | Приложение 
+                
+        li(class='portfolio__item')
+          a(class='portfolio__link' href='#')
+            .portfolio__pic
+              img(class='portfolio__img' src="img4.png") 
+            .portfolio__info
+              h3(class='portfolio__title') Deals App 
+              div(class="portfolio__desc") Продажа одежды 
+              div(class="portfolio__type")
+                i(class="portfolio__icon fa fa-mobile-phone")
+                | Приложение 
+              
+        li(class='portfolio__item')
+          a(class='portfolio__link' href='#')
+            .portfolio__pic
+              img(class='portfolio__img' src="img5.png") 
+            .portfolio__info
+              h3(class='portfolio__title') Deals App 
+              div(class="portfolio__desc") Продажа одежды 
+              div(class="portfolio__type")
+                i(class="portfolio__icon fa fa-mobile-phone")
+                | Приложение 
+              
+include footer.pug         
+                        
+              
+          
+      

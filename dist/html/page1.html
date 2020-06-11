@@ -1,17 +1,14 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
 
 <head>
-    <title></title>
-    <script type="text/javascript"></script>
-    <link rel="stylesheet" href="css/page1.css" />
-    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" />
-</head>
-
-<body></body>
-
-<head>
-    <title></title>
+    <title>first page </title>
+    <meta charset="UTF-8" />
     <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/page1.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/page3.css" />
+    <link rel="stylesheet" href="css/page2.css" />
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" />
 </head>
 
@@ -20,31 +17,74 @@
         <header class="header">
             <div class="container">
                 <div class="header__left">
-                    <div class="user">
-                        <div class="a user__link">
-                            <div class="user__photo"><img class="user__img" src="scrubs.png" alt="Аватар" /></div>
-                            <h1 class="user__name">Егор Истомин</h1>
-                        </div>
-                    </div>
+                    <div class="user"><a class="user__link" href="#">
+                            <div class="user__photo"><img class="user__img" src="scrubs.png" /></div>
+                            <h1 class="user__name">Егор Истомин </h1>
+                        </a></div>
                 </div>
                 <div class="header__right">
-                    <div class="contact"><a class="contact__show" href=""> <span class="contact__text">Мои контакты </span>
-                            <div class="contact__underline"> </div>
+                    <div class="contact"><a class="contact__show"><span class="contact__text">Мои контакты </span>
+                            <div class="contact__underline"></div>
                         </a>
                         <div class="contact__tip">
-                            <div class="treungular"> </div>
+                            <div class="treungular"></div>
                             <div class="treungular2"></div>
                             <ul class="contact__list">
-                                <li class="contact__item"><a class="contact__link" href="mailto:witto24@gmail.com"><i class="contact__icon fa fa-envelope-o"> witto24@gmail.com</i></a></li>
-                                <li class="contact__item"><a class="contact__link" href="tel:+795255158718"> <i class="contact__icon fa fa-phone">  +791234519912</i></a></li>
-                                <li class="contact__item"><a class="contact__link" href="skype:egoristomin?chat"><i class="contact__icon fa fa-skype">  ei.istomin </i></a></li>
+                                <li class="contact__item"><a class="contact__link" href="mailto:witto24@gmail.com"><i class="contact__icon fa fa-envelope-o"> </i> witto24@gmail.com</a></li>
+                                <li class="contact__item"><a class="contact__link" href="tel:+79525158619"><i class="contact__icon fa fa-phone"> </i> +79525158619</a></li>
+                                <li class="contact__item"><a class="contact__link" href="skype:egoristomin?chat"><i class="contact__icon fa fa-skype"> </i> ei.istomin </a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
+        <div class="content">
+            <div class="container">
+                <aside content__sidebar="content__sidebar">
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item is-active"><a class="nav__link" href="page1.html"><i class="nav__icon fa fa-user-secret"> </i> Обо мне </a></li>
+                            <li class="nav__item"><a class="nav__link" href="page2.html"><i class="nav__icon fa fa-rocket"> </i> Карьерный путь </a></li>
+                            <li class="nav__item"><a class="nav__link" href="page3.html"><i class="nav__icon fa fa-briefcase"> </i> Портфолио </a></li>
+                        </ul>
+                    </nav>
+                </aside>
+                <main class="content__main">
+                    <div class="about">
+                        <div class="about__left">
+                            <div class="about__pic"><img class="about__img" src="prog.jpg" alt="Круглое фото" /></div>
+                        </div>
+                        <div class="about__right">
+                            <h2 class="page-title">Обо мне </h2>
+                            <div class="about__text text">
+                                <p>Меня зовут Егор. Живу в Челябинске. Веб-разработкой заинтересовался недавно. С тех пор занимаюсь разработкой сайтов.</p>
+                                <p>Около двух лет работал разработчиком сайтов, делал всё подряд. Но технологии развиваются и не стоят на месте, поэтому выбрал то, чем хочу заниматься и что приносит наибольшее удовольствие - это фронтенд. Решил развиваться в этом направлении.</p>
+                                <p>Главное для меня - это всегда двигаться вперед, становиться лучше, чем ты был вчера.</p>
+                            </div>
+                            <div class="about__download"><a class="download-btn" href="#"><i class="donwload-btn__icon fa fa-download"></i> Скачать резюме </a></div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
     </div>
 </body>
 
 </html>
+<div class="page__footer">
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__left">
+                <div class="copyright">Дизайн был разработан в школе Loftschool </div>
+            </div>
+            <div class="footer__right">
+                <ul class="socials">
+                    <li class="socials__item"><a class="socials__link socials__link--fb">Facebook </a></li>
+                    <li class="socials__item"><a class="socials__link socials__link--vk">VK</a></li>
+                    <li class="socials__item"><a class="socials__link socials__link--tw">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>

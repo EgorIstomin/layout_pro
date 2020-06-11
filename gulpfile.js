@@ -17,3 +17,11 @@ gulp.task('pug', function() {
       .pipe(prettyHtml())
       .pipe(gulp.dest("dist/html"))
 });
+
+var pug2 = require('gulp-pug');
+gulp.task('pug2', function() {
+  return gulp.src("*.pug")
+      .pipe(pug())
+      .pipe(prettyHtml())
+      .pipe(gulp.dest("./"))
+});
